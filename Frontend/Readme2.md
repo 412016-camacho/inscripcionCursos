@@ -1,5 +1,3 @@
-Claro, acá tenés un ejercicio completo en formato Markdown, ideal para un trabajo práctico universitario con **Java Spring Boot + Angular**. Incluye contexto, requerimientos funcionales y no funcionales, y especificaciones tanto para el backend como para el frontend.
-
 ---
 
 # 🏫 Trabajo Práctico: Inscripción a Cursos Optativos
@@ -82,27 +80,27 @@ El sistema debe estar compuesto por:
 
 1. `Alumno`
 
-   * id (Long)
-   * nombre
-   * legajo (único)
-   * email
-   * anioCursado
+  * id (Long)
+  * nombre
+  * legajo (único)
+  * email
+  * anioCursado
 
 2. `Curso`
 
-   * id (Long)
-   * nombre
-   * descripcion
-   * fechaInicio
-   * cupoMaximo
-   * anioMinimo
+  * id (Long)
+  * nombre
+  * descripcion
+  * fechaInicio
+  * cupoMaximo
+  * anioMinimo
 
 3. `Inscripcion`
 
-   * id (Long)
-   * alumno (ManyToOne)
-   * curso (ManyToOne)
-   * fechaInscripcion
+  * id (Long)
+  * alumno (ManyToOne)
+  * curso (ManyToOne)
+  * fechaInscripcion
 
 ### 📡 API REST
 
@@ -139,31 +137,31 @@ DELETE /api/inscripciones?alumnoId=1&cursoId=2
 
 1. **Alta de alumnos**
 
-   * Formulario para crear un nuevo alumno.
+  * Formulario para crear un nuevo alumno.
 
 2. **Alta de cursos**
 
-   * Formulario para crear un nuevo curso.
+  * Formulario para crear un nuevo curso.
 
 3. **Listado de cursos**
 
-   * Tabla o cards con la información completa de los cursos.
-   * Mostrar cupo disponible.
-   * Botón de inscripción si cumple los requisitos.
+  * Tabla o cards con la información completa de los cursos.
+  * Mostrar cupo disponible.
+  * Botón de inscripción si cumple los requisitos.
 
 4. **Inscripción a cursos**
 
-   * Validar en el frontend que:
+  * Validar en el frontend que:
 
-     * El alumno no tenga más de 2 inscripciones.
-     * No esté ya inscripto al curso.
-     * Cumpla con el año requerido.
-     * Haya cupo disponible.
+    * El alumno no tenga más de 2 inscripciones.
+    * No esté ya inscripto al curso.
+    * Cumpla con el año requerido.
+    * Haya cupo disponible.
 
 5. **Cancelar inscripción**
 
-   * Mostrar inscripciones activas del alumno.
-   * Botón de cancelar inscripción (si está dentro del plazo).
+  * Mostrar inscripciones activas del alumno.
+  * Botón de cancelar inscripción (si está dentro del plazo).
 
 ### 🧱 Componentes sugeridos
 
@@ -197,5 +195,3 @@ DELETE /api/inscripciones?alumnoId=1&cursoId=2
 * Testing de endpoints (JUnit / Postman).
 
 ---
-
-¿Querés que prepare también los modelos Java y las interfaces iniciales de los endpoints o alguna parte del código base para que lo uses como punto de partida?
